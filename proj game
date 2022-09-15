@@ -1,0 +1,76 @@
+#include <iostream>	
+#include <stdlib.h>
+#include <conio.h>
+#include <cstdlib>
+
+using namespace std;
+static char tela[25][25];
+
+void movimentacao();
+
+
+struct coordenada
+{
+	int x
+	int y
+};
+
+int main()
+{
+	//menu principal
+    int opcao;
+    inicio:
+    
+    cout <<"1 - JOGAR \n2 - TUTORIAL \n3 - CREDITOS \n4 - SAIR\n";
+    cin >> opcao;
+    switch(opcao) 
+	{
+    	case 1:
+        	cout << "GAME\n";
+        	//fase 1
+        	//fase 2
+        	//fase 3
+        	//vitoria 
+        	//derrota
+        	
+    	case 2:
+        	cout << "TUTORIAL\n";
+        	cout << "O jogador sera representado por esse simbolo: &";
+        	system("cls");
+        	
+        	cout << "Movimentação/n W para andar pra cima\n";
+        	cout << "A para andar pra direita\n";
+        	cout << "D para andar pra esquerda\n";
+        	cout << "S para andar pra baixo\n;
+        	system("cls");
+        	cout << "I: O jogador interage com o objeto que ele estar em cima";
+        	cout << "A chave sera representada por: @;
+        	cout << "\nA porta fechada sera representada por: D";
+        	cout << "\nA porta aberta sera representada por: =";
+        	cout << "\nO:Simbolo que representa um botão que o usuário pode interagir, o botão fica no chão e o jogador deve ficar em cima dele para poder interagir";
+        	cout << "\n#: Simbolo que representa um espinho";
+        	cout << "\n>: Simbolo que representa um teletransporte. O teletransporte sempre deve vir em par, quando o jogador toca em um ele é transportado para o outro e vice-versa.";
+        	system("cls");
+			cout << "Precione qualquer tecla para voltar ao menu\n";
+        	system("pause");
+        	goto inicio;
+        	
+    	case 3:
+        	cout << "Creditos\n";
+  			cout << "Criadores : Pedro Gabriel\nThomas Coutinho\nMatheus Henrique";
+        	
+    	case 4:
+        	cout << "voce pediu para sair, prencione qualquer tecla para continuar\n";
+        	break;
+    	default:
+        	cout << "voce deve escolher uma opcao valida\n";
+        	cout << "Precione qualquer tecla para voltar ao menu\n";
+        	system("pause");
+        	goto inicio;
+    }
+	
+	void movimentacao( )
+	
+}
+
+
